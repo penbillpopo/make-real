@@ -6,15 +6,15 @@ const env =
 		: 'development'
 
 export const LINK_HOST = {
-	production: 'makereal-link.localhost:3000',
+	production: 'admin.imaginetw.com',
 	preview: `link---${process.env.NEXT_PUBLIC_VERCEL_URL}`,
-	development: 'makereal-link.localhost:3000',
+	development: 'admin.imaginetw.com',
 }[env]
 
 export const APP_HOST = {
-	production: 'localhost:3000',
+	production: 'admin.imaginetw.com',
 	preview: process.env.NEXT_PUBLIC_VERCEL_URL,
-	development: 'localhost:3000',
+	development: 'admin.imaginetw.com',
 }[env]
 
 export const PROTOCOL = env === 'development' ? 'http://' : 'https://'
