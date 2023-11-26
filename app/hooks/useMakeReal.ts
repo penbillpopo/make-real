@@ -8,8 +8,10 @@ export function useMakeReal() {
 	const toast = useToasts()
 
 	return useCallback(async () => {
-		const input = document.getElementById('openai_key_risky_but_cool') as HTMLInputElement
-		const apiKey = input?.value ?? null
+		// const input = document.getElementById('openai_key_risky_but_cool') as HTMLInputElement
+		// const apiKey = input?.value ?? null
+
+		const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY
 
 		track('make_real', { timestamp: Date.now() })
 

@@ -35,22 +35,23 @@ export function APIKeyInput() {
 	if (isFocusMode) return null
 
 	return (
-		<div className={`your-own-api-key ${breakpoint < 6 ? 'your-own-api-key__mobile' : ''}`}>
-			<div className="your-own-api-key__inner">
-				<div className="input__wrapper">
-					<input
-						id="openai_key_risky_but_cool"
-						defaultValue={localStorage.getItem('makeitreal_key') ?? ''}
-						onChange={handleChange}
-						onKeyDown={handleKeyDown}
-						spellCheck={false}
-						autoCapitalize="off"
-					/>
-				</div>
-				<button className="question__button" onClick={handleQuestionClick}>
-					<Icon icon={cool ? 'check' : 'question'} />
-				</button>
-			</div>
-		</div>
+		<div></div>
+		// <div className={`your-own-api-key ${breakpoint < 6 ? 'your-own-api-key__mobile' : ''}`}>
+		// 	<div className="your-own-api-key__inner">
+		// 		<div className="input__wrapper">
+		// 			<input
+		// 				id="openai_key_risky_but_cool"
+		// 				defaultValue={localStorage.getItem('makeitreal_key') ?? ''}
+		// 				onChange={handleChange}
+		// 				onKeyDown={handleKeyDown}
+		// 				spellCheck={false}
+		// 				autoCapitalize="off"
+		// 			/>
+		// 		</div>
+		// 		<button className="question__button" onClick={handleQuestionClick}>
+		// 			<Icon icon={cool ? 'check' : 'question'} />
+		// 		</button>
+		// 	</div>
+		// </div>
 	)
 }
