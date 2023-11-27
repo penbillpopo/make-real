@@ -137,6 +137,7 @@ export class PreviewShapeUtil extends BaseBoxShapeUtil<PreviewShape> {
 								pointerEvents: 'all',
 							}}
 							onClick={() => {
+								console.log('copying',navigator)
 								if (navigator && navigator.clipboard) {
 									navigator.clipboard.writeText(shape.props.html)
 									toast.addToast({
